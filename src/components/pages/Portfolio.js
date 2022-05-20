@@ -1,6 +1,5 @@
-import React, { Component } from 'react';
-
-// import SpeedRunImage from './images/speedrun-bg-sonic.png'
+import React from 'react';
+import { Card, Button } from 'react-bootstrap'
 
 import {
   SpeedRunImage,
@@ -10,7 +9,6 @@ import {
   PasswordGeneratorImage
 } from '../pages/images'
 
-import { Card, Button } from 'react-bootstrap'
 
 const shownProjects = [
   {
