@@ -1,9 +1,11 @@
 import React from 'react';
+import headshot from './images/patrick.jpg'
 
 export default function AboutMe() {
   return (
     <div>
       <h1>About Page</h1>
+      <img id='patrickheadshot' src={headshot} alt="Patrick Headshot"></img>
       <p>
         Nunc pharetra finibus est at efficitur. Praesent sed congue diam.
         Integer gravida dui mauris, ut interdum nunc egestas sed. Aenean sed
