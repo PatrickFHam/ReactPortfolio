@@ -1,5 +1,9 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap'
+import { Card, ButtonIcon, Button } from 'react-rainbow-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faGlobe, faShareAlt } from '@fortawesome/free-solid-svg-icons';
+import { faHeart } from '@fortawesome/free-regular-svg-icons';
+// import '../../styles/Portfolio.css';
 
 import {
   SpeedRunImage,
@@ -59,37 +63,54 @@ const shownProjects = [
 ]
 
 export default function Portfolio() {
+  
+  const iconContainerStyles = {
+    width: '2.5rem',
+    height: '2.5rem',
+  };
+  
   return (
-    <div>
+    <section>
       <h1>Portfolio</h1>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque
-        velit, lobortis ut magna varius, blandit rhoncus sem. Morbi lacinia nisi
-        ac dui fermentum, sed luctus urna tincidunt. Etiam ut feugiat ex. Cras
-        non risus mi. Curabitur mattis rutrum ipsum, ut aliquet urna imperdiet
-        ac. Sed nec nulla aliquam, bibendum odio eget, vestibulum tortor. Cras
-        rutrum ligula in tincidunt commodo. Morbi sit amet mollis orci, in
-        tristique ex. Donec nec ornare elit. Donec blandit est sed risus feugiat
-        porttitor. Vestibulum molestie hendrerit massa non consequat. Vestibulum
-        vitae lorem tortor. In elementum ultricies tempus. Interdum et malesuada
-        fames ac ante ipsum primis in faucibus.
-      </p>
-      <section id="allthecards">
       {shownProjects.map(item => (
-        <Card key={item.id} style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={item.image} />
-        <Card.Body>
-          <Card.Title>{item.title}</Card.Title>
-          <Card.Text>
-          {item.subtitle}
-          </Card.Text>
-          <Button href={item.githubLink} target='blank' variant="primary">See on GitHub</Button>
-          <Button href={item.liveLink} target='blank' variant="success">See it LIVE</Button>
-        </Card.Body>
-      </Card>
-      ))}
-        
-      </section>
-    </div>
-  );
-}
+      <div className="rainbow-m-around_large allthecards" id="allthecards">
+          <Card
+              key={item.id}
+              style={{width: 300, height: 500}}
+              icon={
+                  <span
+                      className="rainbow-background-color_success rainbow-border-radius_circle rainbow-align-content_center"
+                      style={iconContainerStyles}
+                  >
+                      <FontAwesomeIcon icon={faGlobe} size="lg" className="rainbow-color_white" />
+                  </span>
+          }
+              title={item.title}
+              actions={<Button variant="neutral" label="Add" />}
+              footer={
+                  <div className="rainbow-align-content_space-between">
+                      <div className="rainbow-flex">
+                          <ButtonIcon
+                              icon={<FontAwesomeIcon icon={faHeart} />}
+                              className="rainbow-m-right_xx-small"
+                              href={item.githubLink}
+                          />
+                          <ButtonIcon
+                            icon={<FontAwesomeIcon icon={faShareAlt} />}
+                            href={item.liveLink}
+                          />
+                      </div>
+                      {/* <ButtonIcon icon={<FontAwesomeIcon icon={faAngleDown} />} /> */}
+                  </div>
+          }
+          >
+              <div className="rainbow-p-around_xx-large rainbow-align-content_center rainbow-flex_column">
+                  <img src={item.image} alt=''/>
+                  <h1 className="rainbow-p-top_small rainbow-font-size-heading_small">
+                      {item.subtitle}
+                  </h1>
+              </div>
+          </Card>
+      </div>))}
+    </section>
+)};

@@ -1,0 +1,21 @@
+.section {
+  background: #f3e5f5;
+  padding: 20px;
+}
+
+.section h2 {
+  text-align: center;
+}
+
+#allthecards {
+  display: flex;
+  flex-direction: row;
+}
+.allthecards {
+  display: flex;
+  flex-direction: row;
+}
+
+.projectCard {
+  height: 75px;
+}
