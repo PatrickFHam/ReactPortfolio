@@ -1,9 +1,7 @@
 import React from 'react';
-import { Card, ButtonIcon, Button } from 'react-rainbow-components'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faGlobe, faShareAlt } from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-regular-svg-icons';
-// import '../../styles/Portfolio.css';
+import '../../styles/ResetSyles.css';
+import '../../styles/RootStyles.css';
+import '../../styles/Portfolio.css';
 
 import {
   SpeedRunImage,
@@ -64,53 +62,20 @@ const shownProjects = [
 
 export default function Portfolio() {
   
-  const iconContainerStyles = {
-    width: '2.5rem',
-    height: '2.5rem',
-  };
-  
   return (
     <section>
       <h1>Portfolio</h1>
-      {shownProjects.map(item => (
-      <div className="rainbow-m-around_large allthecards" id="allthecards">
-          <Card
-              key={item.id}
-              style={{width: 300, height: 500}}
-              icon={
-                  <span
-                      className="rainbow-background-color_success rainbow-border-radius_circle rainbow-align-content_center"
-                      style={iconContainerStyles}
-                  >
-                      <FontAwesomeIcon icon={faGlobe} size="lg" className="rainbow-color_white" />
-                  </span>
-          }
-              title={item.title}
-              actions={<Button variant="neutral" label="Add" />}
-              footer={
-                  <div className="rainbow-align-content_space-between">
-                      <div className="rainbow-flex">
-                          <ButtonIcon
-                              icon={<FontAwesomeIcon icon={faHeart} />}
-                              className="rainbow-m-right_xx-small"
-                              href={item.githubLink}
-                          />
-                          <ButtonIcon
-                            icon={<FontAwesomeIcon icon={faShareAlt} />}
-                            href={item.liveLink}
-                          />
-                      </div>
-                      {/* <ButtonIcon icon={<FontAwesomeIcon icon={faAngleDown} />} /> */}
-                  </div>
-          }
-          >
-              <div className="rainbow-p-around_xx-large rainbow-align-content_center rainbow-flex_column">
-                  <img src={item.image} alt=''/>
-                  <h1 className="rainbow-p-top_small rainbow-font-size-heading_small">
-                      {item.subtitle}
-                  </h1>
-              </div>
-          </Card>
-      </div>))}
+      <div className="allthecards" id="allthecards">
+        {shownProjects.map(item => (
+          <a
+            key={item.id}
+            href={item.githubLink}
+            alt=""
+            className="card cardmain">
+            <h3>{item.title}</h3>
+            <p>{item.subtitle}</p>
+          </a>
+        ))}
+      </div>
     </section>
 )};
