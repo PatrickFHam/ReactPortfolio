@@ -6,12 +6,12 @@ import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-b
 
 import headshot from './images/patrick.jpg'
 
-export default function AboutMe() {
+export default function Home() {
 
   return (
     <Container>
       <Col>
-        <Text h1>About Me</Text>
+        <Text h1>Home</Text>
         <Row flex="flex-auto">
           <Card cover css={{ maxHeight: 500, maxWidth: 400}}>
               <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
@@ -120,10 +120,9 @@ export default function AboutMe() {
             </Card>
           
           <Col css={{ marginLeft: 15 }}>
-            <Text css={{ marginBottom: 15}}>Since I was seven years old, I have bounced back and forth between music and tech.  My toys were a Commodore64 and a 6' Kawaii grand piano.  On my childhood bookshelf was 'QBASIC for Dummies' and 'How to Write Better Orchestrations'.  I was automating with Visual Basic Macros before lunch, and engraving new piano arrangement after lunch.   I was writing chorales on days that I wasn't writing small programs, doing harmonic analysis right after I built a PC to sell to a friend's parents.</Text>
-            <Text css={{ marginBottom: 15}}>I began an Information Systems degree when I finished high school in 2003.  Part-way through, I abandoned tech to seek a formal music degree.  Since then, for fifteen years, I've been a musician, mostly serving 'the church' which I still love. But it is time to shift back into tech, and allow music to remain a hobby and volunteer-work.  I'm excited to get back into the other of my first-loves.</Text>
-            <Text css={{ marginBottom: 15}}>The skillset of a high-output musician is SUPER-useful in tech!  Writing orchestrations is nothing more than solving puzzles.  On the days that it's flowing, one commits themselves to the bench and gets the work done... ride the wave... just like coding!  I'm excited to learn more ways how my many years in music will benefit my new years in tech. </Text>
-            <Text css={{ marginBottom: 15}}>Thank you for your time in reviewing my recent work and resume.  I look forward to answering any questions you have about my work and my journey back into the field of technology.</Text>
+            <Text h2>Hello, and welcome!</Text>
+            <Text h3>I'm Patrick, a MERN full-stack developer.</Text>
+            <Text h5>Here you can learn more about me, and what I've been working on, over the last 6 months.  With only a couple weeks left, I'll be finishing a coding bootcamp through Georgia Tech.  I'm looking forward to putting-to-good-use these new tools I've been sharpening.</Text>
           </Col>
 
         </Row>

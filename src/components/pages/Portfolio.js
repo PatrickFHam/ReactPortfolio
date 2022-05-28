@@ -10,13 +10,23 @@ import {
   WeatherDashboardImage,
   WorkdayPlannerImage,
   CodeQuizImage,
-  PasswordGeneratorImage
+  PasswordGeneratorImage,
+  Bookshelf
 } from '../pages/images'
 
 
 const shownProjects = [
   {
     id: 1,
+    title: "The Shelf, by the Good Neighbors",
+    subtitle: "Handlebars / Javascript / Bootstrap / HTML / CSS",
+    githubLink: "https://github.com/PatrickFHam/Good-Neighbor",
+    liveLink: "https://pure-cliffs-09110.herokuapp.com/",
+    image: Bookshelf,
+    cardSize: 'card-big'
+  },
+  {
+    id: 2,
     title: "SpeedRun Spectator",
     subtitle: "3rd-Party-APIs / Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/SpeedRunSpectator",
@@ -25,7 +35,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 2,
+    id: 3,
     title: "Weather Dashboard",
     subtitle: "3rd-Party-APIs / Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/WeatherDashboard",
@@ -34,7 +44,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 3,
+    id: 4,
     title: "Workday Planner",
     subtitle: "Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/WorkdayScheduler",
@@ -43,7 +53,7 @@ const shownProjects = [
     cardSize: 'card-med'
   },
   {
-    id: 4,
+    id: 5,
     title: "Code Quiz",
     subtitle: "Javascript / CSS",
     githubLink: "https://github.com/PatrickFHam/CodeQuiz",
@@ -52,7 +62,7 @@ const shownProjects = [
     cardSize: 'card-med'
   },
   {
-    id: 5,
+    id: 6,
     title: "Password Generator",
     subtitle: "Javascript",
     githubLink: "https://github.com/PatrickFHam/PasswordGenerator",
@@ -102,7 +112,10 @@ export default function Portfolio() {
               <Row>
                 <Col>
                   <Row justify="flex-end">
-                    <Button ghost auto rounded color="primary" id="githublink" to={item.githubLink} target="blank">
+                    <Button ghost auto rounded color="primary" id="githublink" onClick={(e) => {
+                          e.preventDefault();
+                          window.open(`${item.githubLink}`, "_blank");
+                          }}>
                       <Text
                         css={{ color: "inherit" }}
                         size={24}
@@ -112,7 +125,10 @@ export default function Portfolio() {
                         <FontAwesomeIcon icon={faGithub} />
                       </Text>
                     </Button>
-                    <Button ghost auto rounded color="primary" id="livelink" to={item.liveLink} target="blank">
+                    <Button ghost auto rounded color="primary" id="livelink" onClick={(e) => {
+                          e.preventDefault();
+                          window.open(`${item.liveLink}`, "_blank");
+                          }}>
                       <Text
                         css={{ color: "inherit" }}
                         size={24}

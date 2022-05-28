@@ -1,20 +1,20 @@
 import React from 'react';
 import { Card, Button, Container, Row, Col, Text, Image, Spacer, Link } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faList, faFolder, faLink } from '@fortawesome/free-solid-svg-icons';
+import { faEnvelope, faList, faFolder, faLink, faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import resume from './pdf/Resume.pdf'
 
 export default function Resume() {
 
   return (
     <Container>
-      <h1>Resume</h1>
+      <h1>Resume . . . <Link href={resume} target="_blank"><FontAwesomeIcon icon={faFileArrowDown} /></Link> </h1>
       <Row>
         <Col>
           <Container>
             <Text h6>Focused and determined full-stack developer.  Formerly a departmental music director, composer, arranger, and volunteer-team builder, there is a unique blend of skills, including creative, procedural, technical, and collaborative. The ability to independently focus on details, and collaboratively synergize.</Text>
 
-            <Spacer x={3}></Spacer>
             <Spacer x={3}></Spacer>
 
             <Text h5>Technical Skills</Text>
@@ -22,6 +22,14 @@ export default function Resume() {
             <Text>React, Javascript, HTML, CSS</Text>
             <Text h6>BackEnd:</Text>
             <Text>nodeJS, ExpressJS, MySQL, MongoDB</Text>
+            
+            <Spacer x={3}></Spacer>
+
+            <Text h5>Recent Training</Text>
+            <Text h6>Georgia Tech Coding Bootcamp</Text>
+            <Text>Full-Stack Web Development</Text>
+            <Text h6>Completed</Text>
+            <Text>June 15, 2022</Text>
           </Container>
         </Col>
           

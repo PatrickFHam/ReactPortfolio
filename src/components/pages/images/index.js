@@ -4,6 +4,7 @@ import WorkdayPlannerImage from '../images/planner.jpg';
 import CodeQuizImage from '../images/matrix.jpg';
 import PasswordGeneratorImage from '../images/password.jpg';
 import HeaderBannerImage from '../images/legos2.jpg';
+import Bookshelf from '../images/bookshelf.jpg'
 
 export {
   SpeedRunImage,
@@ -11,5 +12,6 @@ export {
   WorkdayPlannerImage,
   CodeQuizImage,
   PasswordGeneratorImage,
-  HeaderBannerImage
+  HeaderBannerImage,
+  Bookshelf,
 };
