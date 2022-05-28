@@ -1,6 +1,8 @@
 import React from 'react';
-import '../../styles/ResetSyles.css';
-import '../../styles/RootStyles.css';
+import { Card, Button, Container, Row, Col, Text } from '@nextui-org/react';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faCoffee, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/Portfolio.css';
 
 import {
@@ -61,21 +63,71 @@ const shownProjects = [
 ]
 
 export default function Portfolio() {
+
   
   return (
-    <section>
+    <Container>
       <h1>Portfolio</h1>
-      <div className="allthecards" id="allthecards">
+      <Row gap={1} wrap="wrap" id="allthecards">
         {shownProjects.map(item => (
-          <a
-            key={item.id}
-            href={item.githubLink}
-            alt=""
-            className="card cardmain">
-            <h3>{item.title}</h3>
-            <p>{item.subtitle}</p>
-          </a>
+          <Card key={item.id} cover css={{ marginTop: 7, marginBottom: 7}}>
+            <Card.Header blur css={{ backgroundColor: "grey", position: "absolute", zIndex: 1, top: 0 }}>
+              <Col>
+                <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
+                  {item.subtitle}
+                </Text>
+                <Text h3 color="black">
+                  {item.title}
+                </Text>
+              </Col>
+            </Card.Header>
+            <Card.Body>
+              <Card.Image
+                src={item.image}
+                height={400}
+                width="100%"
+                alt=""
+              />
+            </Card.Body>
+            <Card.Footer
+              blur
+              css={{
+                position: "absolute",
+                bgBlur: "#000000",
+                borderTop: "$borderWeights$light solid rgba(255, 255, 255, 0.2)",
+                bottom: 0,
+                zIndex: 1,
+              }}
+            >
+              <Row>
+                <Col>
+                  <Row justify="flex-end">
+                    <Button ghost auto rounded color="primary" id="githublink" to={item.githubLink} target="blank">
+                      <Text
+                        css={{ color: "inherit" }}
+                        size={24}
+                        weight="bold"
+                        transform="uppercase"
+                      >
+                        <FontAwesomeIcon icon={faGithub} />
+                      </Text>
+                    </Button>
+                    <Button ghost auto rounded color="primary" id="livelink" to={item.liveLink} target="blank">
+                      <Text
+                        css={{ color: "inherit" }}
+                        size={24}
+                        weight="bold"
+                        transform="uppercase"
+                      >
+                        <FontAwesomeIcon icon={faGlobe} />
+                      </Text>
+                    </Button>
+                  </Row>
+                </Col>
+              </Row>
+            </Card.Footer>
+          </Card>
         ))}
-      </div>
-    </section>
+      </Row>
+    </Container>
 )};

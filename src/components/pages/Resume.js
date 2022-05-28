@@ -1,10 +1,11 @@
-import React, { useState } from 'react';
+import React from 'react';
+import { Card, Button, Container, Row, Col, Text, Image } from '@nextui-org/react';
 
 export default function Resume() {
 
   return (
-    <div>
+    <Container>
       <h1>Resume</h1>
-    </div>
+    </Container>
   );
 }

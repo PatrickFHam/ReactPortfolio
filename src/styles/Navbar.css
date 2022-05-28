@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
   background: #6a1b9a;
   height: 60px;
 }
@@ -9,4 +9,25 @@
   text-decoration: none;
   margin: 5px;
   line-height: 3;
+} */
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.nav-link {
+  color: inherit;
+}
+.nav-link:visited {
+  color: inherit;
+}
+.nav-link:hover {
+  color: #0b3797;
+}
+
+.active {
+  color:#6a1b9a;
+  text-decoration: underline;
 }
