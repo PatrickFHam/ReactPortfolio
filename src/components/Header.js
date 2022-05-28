@@ -9,7 +9,7 @@ export default function Header() {
   return (
     <div className="header">
       <Container>
-        <Text h1>Patrick F. Ham</Text>
+        <h1>Patrick F. Ham</h1>
         {/* <Text h3 css={{ justifySelf: 'center'}}>Full-Stack Web Developer</Text> */}
       </Container>
       <img src={HeaderBannerImage} alt="legos"></img>

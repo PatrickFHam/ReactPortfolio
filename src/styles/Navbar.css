@@ -31,3 +31,12 @@
   color:#6a1b9a;
   text-decoration: underline;
 }
+
+
+/* MEDIA QUERIES */
+@media screen and (max-width: 450px) {
+
+  .nav {
+      flex-direction: column;
+  }
+}

@@ -71,7 +71,7 @@ export default function Portfolio() {
       <Row gap={1} wrap="wrap" id="allthecards">
         {shownProjects.map(item => (
           <Card key={item.id} cover css={{ marginTop: 7, marginBottom: 7}}>
-            <Card.Header blur css={{ backgroundColor: "grey", position: "absolute", zIndex: 1, top: 0 }}>
+            <Card.Header blur="true" css={{ backgroundColor: "grey", position: "absolute", zIndex: 1, top: 0 }}>
               <Col>
                 <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
                   {item.subtitle}
@@ -90,7 +90,7 @@ export default function Portfolio() {
               />
             </Card.Body>
             <Card.Footer
-              blur
+              blur="true"
               css={{
                 position: "absolute",
                 bgBlur: "#000000",

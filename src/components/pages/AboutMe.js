@@ -7,6 +7,7 @@ import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-b
 import headshot from './images/patrick.jpg'
 
 export default function AboutMe() {
+
   return (
     <Container>
       <Col>
@@ -124,7 +125,7 @@ export default function AboutMe() {
             <Text css={{ marginBottom: 15}}>Thank you for your time in reviewing my recent work and resume.  I look forward to answering any questions you have about my work and my journey back into the field of technology.</Text>
           </Col>
 
-          </Row>
+        </Row>
         
       </Col>
     </Container>

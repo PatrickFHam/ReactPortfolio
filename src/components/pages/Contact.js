@@ -81,7 +81,7 @@ export default function Contact() {
               <FontAwesomeIcon icon={faFacebook} />  PM me on Facebook
             </Text>
           </Button>
-          <Button solid auto rounded color="gradient" id="resume">
+          <Button solid="true" auto rounded color="gradient" id="resume">
             <Text
               css={{ color: "inherit" }}
               size={16}
@@ -90,7 +90,7 @@ export default function Contact() {
               <FontAwesomeIcon icon={faList} />  Review My Resume First? *wink
             </Text>
           </Button>
-          <Button solid auto rounded color="gradient" id="resume">
+          <Button solid="true" auto rounded color="gradient" id="resume">
             <Text
               css={{ color: "inherit" }}
               size={16}

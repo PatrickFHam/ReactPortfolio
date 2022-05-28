@@ -8,7 +8,7 @@
 
 .header h1 {
   margin: 0;
-  padding-top: 75px;
+  padding-top: 25px;
   text-align: center;
   color: white;
   font-size: 3rem;
@@ -19,3 +19,4 @@
   flex-direction: column;
   justify-items: center;
 }
+
