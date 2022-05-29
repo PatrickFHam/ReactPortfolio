@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/reactportfolio/static/css/main.1ec7193e.css",
+    "main.js": "/reactportfolio/static/js/main.b0203427.js",
+    "static/media/bookshelf.jpg": "/reactportfolio/static/media/bookshelf.4d5f34ed140cf48f9756.jpg",
+    "static/media/speedrun-bg-sonic-edit.png": "/reactportfolio/static/media/speedrun-bg-sonic-edit.878f201e542c89875f75.png",
+    "static/media/legos.jpg": "/reactportfolio/static/media/legos.9b541f03b4475657cf45.jpg",
+    "static/media/legos2.jpg": "/reactportfolio/static/media/legos2.28a92cc20aab5b915f20.jpg",
+    "static/media/password.jpg": "/reactportfolio/static/media/password.11d9294b8ebda481709c.jpg",
+    "static/media/planner.jpg": "/reactportfolio/static/media/planner.c4dc564d5ebbc7bfecce.jpg",
+    "static/media/matrix.jpg": "/reactportfolio/static/media/matrix.16654cbe89ee73183b01.jpg",
+    "static/media/Resume.pdf": "/reactportfolio/static/media/Resume.47381646700308f04da1.pdf",
+    "static/media/patrick.jpg": "/reactportfolio/static/media/patrick.b688bcec4e0e5ab0b306.jpg",
+    "static/media/weather.jpg": "/reactportfolio/static/media/weather.e28419501b88ebb5f73f.jpg",
+    "index.html": "/reactportfolio/index.html",
+    "main.1ec7193e.css.map": "/reactportfolio/static/css/main.1ec7193e.css.map",
+    "main.b0203427.js.map": "/reactportfolio/static/js/main.b0203427.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.1ec7193e.css",
+    "static/js/main.b0203427.js"
+  ]
+}
