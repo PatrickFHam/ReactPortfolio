@@ -1,6 +1,5 @@
 import React from 'react';
-// import 'bootstrap/dist/css/bootstrap.min.css';
-import { Card, Button, Container, Row, Col, Text, Image } from '@nextui-org/react';
+import { Container } from '@nextui-org/react';
 import '../styles/Navbar.css'
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object

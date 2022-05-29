@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Container, Row, Col, Text, Image } from '@nextui-org/react';
+import { Card, Button, Container, Row, Col, Text} from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faList } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';

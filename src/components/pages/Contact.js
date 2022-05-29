@@ -1,9 +1,8 @@
-import React, { useState } from 'react';
-import { Card, Button, Container, Row, Col, Text, Image } from '@nextui-org/react';
+import React from 'react';
+import { Button, Container, Col, Text } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faList, faFolder } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import PortfolioContainer from '../PortfolioContainer';
 
 export default function Contact(props) {
   return (

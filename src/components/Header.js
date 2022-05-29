@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button, Container, Row, Col, Text, Image } from '@nextui-org/react';
+import { Container } from '@nextui-org/react';
 import './pages/images/legos.jpg'
 import '../styles/Header.css';
 import { HeaderBannerImage } from './pages/images';

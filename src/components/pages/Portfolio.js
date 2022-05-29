@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button, Container, Row, Col, Text } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCoffee, faGlobe } from '@fortawesome/free-solid-svg-icons';
+import { faGlobe } from '@fortawesome/free-solid-svg-icons';
 import { faGithub } from '@fortawesome/free-brands-svg-icons';
 import '../../styles/Portfolio.css';
 
