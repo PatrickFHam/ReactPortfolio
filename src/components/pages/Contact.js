@@ -5,7 +5,7 @@ import { faEnvelope, faList, faFolder } from '@fortawesome/free-solid-svg-icons'
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
 import PortfolioContainer from '../PortfolioContainer';
 
-export default function Contact() {
+export default function Contact(props) {
   return (
     <Container>
       <Col>
@@ -81,7 +81,7 @@ export default function Contact() {
               <FontAwesomeIcon icon={faFacebook} />  PM me on Facebook
             </Text>
           </Button>
-          <Button solid="true" auto rounded color="gradient" id="resume">
+          <Button solid="true" auto rounded color="gradient" id="resume" onClick={(e) => {props.setCurrentPage('Resume')}}>
             <Text
               css={{ color: "inherit" }}
               size={16}
@@ -90,7 +90,7 @@ export default function Contact() {
               <FontAwesomeIcon icon={faList} />  Review My Resume First? *wink
             </Text>
           </Button>
-          <Button solid="true" auto rounded color="gradient" id="resume">
+          <Button solid="true" auto rounded color="gradient" id="resume" onClick={(e) => {props.setCurrentPage('Portfolio')}}>
             <Text
               css={{ color: "inherit" }}
               size={16}
