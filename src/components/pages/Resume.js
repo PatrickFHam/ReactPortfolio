@@ -148,7 +148,6 @@ export default function Resume() {
           </Container>
         </Col>
       </Row>
-
     </Container>
   );
 }
