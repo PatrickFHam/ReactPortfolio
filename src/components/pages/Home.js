@@ -122,7 +122,7 @@ export default function Home() {
           <Col css={{ marginLeft: 15 }}>
             <Text h2>Hello, and welcome!</Text>
             <Text h3>I'm Patrick, a MERN full-stack developer.</Text>
-            <Text h5>Here you can learn more about me, and what I've been working on, over the last 6 months.  With only a couple weeks left, I'll be finishing a coding bootcamp through Georgia Tech.  I'm looking forward to putting-to-good-use these new tools I've been sharpening.</Text>
+            <Text h5>Here you can learn more about me, and what I've been working on, over the last 6 months.  With only a couple weeks left, I'll be finishing a coding bootcamp through Georgia Tech.  I've been sharpening some new tools, and I'm looking forward to putting them to good-use!</Text>
           </Col>
 
         </Row>

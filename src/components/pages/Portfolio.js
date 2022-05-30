@@ -11,13 +11,23 @@ import {
   WorkdayPlannerImage,
   CodeQuizImage,
   PasswordGeneratorImage,
-  Bookshelf
+  Bookshelf,
+  HeaderBannerImage
 } from '../pages/images'
 
 
 const shownProjects = [
   {
     id: 1,
+    title: "This Profile Site",
+    subtitle: "React.js / Javascript / NextUI / HTML / CSS",
+    githubLink: "https://github.com/PatrickFHam/ReactProfile",
+    liveLink: "",
+    image: HeaderBannerImage,
+    cardSize: 'card-big'
+  },
+  {
+    id: 2,
     title: "The Shelf, by the Good Neighbors",
     subtitle: "Handlebars / Javascript / Bootstrap / HTML / CSS",
     githubLink: "https://github.com/PatrickFHam/Good-Neighbor",
@@ -26,7 +36,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 2,
+    id: 3,
     title: "SpeedRun Spectator",
     subtitle: "3rd-Party-APIs / Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/SpeedRunSpectator",
@@ -35,7 +45,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 3,
+    id: 4,
     title: "Weather Dashboard",
     subtitle: "3rd-Party-APIs / Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/WeatherDashboard",
@@ -44,7 +54,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 4,
+    id: 5,
     title: "Workday Planner",
     subtitle: "Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/WorkdayScheduler",
@@ -53,7 +63,7 @@ const shownProjects = [
     cardSize: 'card-med'
   },
   {
-    id: 5,
+    id: 6,
     title: "Code Quiz",
     subtitle: "Javascript / CSS",
     githubLink: "https://github.com/PatrickFHam/CodeQuiz",
@@ -62,7 +72,7 @@ const shownProjects = [
     cardSize: 'card-med'
   },
   {
-    id: 6,
+    id: 7,
     title: "Password Generator",
     subtitle: "Javascript",
     githubLink: "https://github.com/PatrickFHam/PasswordGenerator",
