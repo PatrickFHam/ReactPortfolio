@@ -19,8 +19,8 @@ export default function Contact(props) {
           Feel free to use any of the methods below to contact me.  I'm reacheable, always.
         </Text>
 
-        <Row fluid="true" AlignItems='stretch' Justify='space-evenly'>
-          <Container AlignItems='stretch' id="list-of-contact-methods">
+        <Row id="button-and-form-row">
+          <Container sm='true' id="list-of-contact-methods">
             <Button ghost auto rounded color="primary" id="github"
               onClick={(e) => {
                 e.preventDefault();
@@ -104,7 +104,7 @@ export default function Contact(props) {
             </Button>
           </Container>
             
-          <Container responsive="true" AlignItems='stretch'>
+          <Container sm="true" id="container-for-contact-form">
             <Form />
           </Container>
 

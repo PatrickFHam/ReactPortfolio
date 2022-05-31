@@ -16,7 +16,7 @@
   flex-grow: 1;
 }
 
-#bio {
+#greeting {
   min-width: 200px;
   max-width: 500px;
   flex-grow: 1;

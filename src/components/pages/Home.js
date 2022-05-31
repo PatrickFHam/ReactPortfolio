@@ -3,17 +3,18 @@ import { Card, Button, Container, Row, Col, Text} from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faList } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import '../../styles/Home.css'
 
 import headshot from './images/patrick.jpg'
 
 export default function Home() {
 
   return (
-    <Container>
+    <Container sm>
       <Col>
         <Text h1>Home</Text>
-        <Row flex="flex-auto">
-          <Card cover css={{ maxHeight: 500, maxWidth: 400}}>
+        <Row id="row-with-stuff">
+          <Card id="headshotcard" cover>
               <Card.Header css={{ position: "absolute", zIndex: 1, top: 5 }}>
                 <Col>
                   <Text size={12} weight="bold" transform="uppercase" color="#ffffffAA">
@@ -117,9 +118,9 @@ export default function Home() {
                   </Col>
                 </Row>
               </Card.Footer>
-            </Card>
+          </Card>
           
-          <Col css={{ marginLeft: 15 }}>
+          <Col id="greeting">
             <Text h2>Hello, and welcome!</Text>
             <Text h3>I'm Patrick, a MERN full-stack developer.</Text>
             <Text h5>Here you can learn more about me, and what I've been working on, over the last 6 months.  With only a couple weeks left, I'll be finishing a coding bootcamp through Georgia Tech.  I've been sharpening some new tools, and I'm looking forward to putting them to good-use!</Text>

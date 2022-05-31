@@ -1,0 +1,23 @@
+.row-with-two-columns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.col {
+  min-width: 200px;
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+.col-left {
+  min-width: 200px;
+  max-width: 250px;
+  margin-right: 20px;
+}
+.col-right {
+  min-width: 300px;
+  max-width: 500px;
+  margin-left: 20px;
+}

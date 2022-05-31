@@ -11,3 +11,21 @@
   padding-left: 10px;
   width: 100%;
 }
+
+#button-and-form-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+#container-for-contact-form {
+  min-width: 250px;
+  max-width: 300px;
+  flex-grow: 1;
+}
+
+#list-of-contact-methods {
+  min-width: 250px;
+  max-width: 300px;
+  flex-grow: 1;
+}

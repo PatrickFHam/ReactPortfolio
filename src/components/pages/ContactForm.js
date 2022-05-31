@@ -1,8 +1,5 @@
 import React, { useState } from 'react';
-import { Button, Container, Col, Text, Row, Input, Textarea } from '@nextui-org/react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope, faList, faFolder } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
+import { Button, Container, Col, Text, Input, Textarea } from '@nextui-org/react';
 import '../../styles/Contact.css';
 
 export default function Form() {
@@ -24,7 +21,7 @@ export default function Form() {
     e.preventDefault();
 
     // Alert the user their first and last name, clear the inputs
-    alert(`Hello ${name} ${email}`);
+    alert(`Hello, ${name}! \n Your email address is: ${email}. \n In the future, your message will be sent to Patrick... but not yet.`);
     setName('');
     setEmail('');
   };
@@ -40,6 +37,7 @@ export default function Form() {
             onChange={handleInputChange}
             type="text"
             placeholder="name"
+            aria-label='name'
           />
           <Input clearable underlined 
             value={email}
@@ -47,8 +45,9 @@ export default function Form() {
             onChange={handleInputChange}
             type="text"
             placeholder="email address"
+            aria-label='email'
           />
-          <Textarea minrows={2} underlined placeholder="body of your message here" />
+          <Textarea minrows={2} underlined placeholder="body of your message here" aria-label='input-text' />
           <Button auto rounded type="button" onClick={handleFormSubmit}>
             Send Message
           </Button>

@@ -3,15 +3,17 @@ import { Container, Row, Col, Text, Spacer, Link } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFolder,faFileArrowDown} from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import resume from './pdf/Resume.pdf'
+import '../../styles/Resume.css';
+import resume from './pdf/Resume.pdf';
 
 export default function Resume() {
 
   return (
-    <Container>
+    <Container md>
       <h1>Resume . . . <Link href={resume} target="_blank"><FontAwesomeIcon icon={faFileArrowDown} /></Link> </h1>
-      <Row>
-        <Col>
+      <h2>Patrick. F. Ham</h2>
+      <Row className='row-with-two-columns'>
+        <Col className='col col-left'>
           <Container>
             <Text h6>Focused and determined full-stack developer.  Formerly a departmental music director, composer, arranger, and volunteer-team builder, there is a unique blend of skills, including creative, procedural, technical, and collaborative. The ability to independently focus on details, and collaboratively synergize.</Text>
 
@@ -33,7 +35,7 @@ export default function Resume() {
           </Container>
         </Col>
           
-        <Col>
+        <Col className='col col-right'>
           <Container>
             <Text h5>Contact Info</Text>
             <Text>156 Dixon Street</Text>
@@ -46,11 +48,11 @@ export default function Resume() {
 
           <Container>
             <Text h5>Online Presences</Text>
-            <Text><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> - LinkedIn - <Link href="https://www.linkedin.com/in/patrickfham/" target="_blank">linkedin.com/in/patrickfham/ </Link></Text>
-            <Text><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> - GitHub - <Link href="https://www.linkedin.com/in/patrickfham/" target="_blank">linkedin.com/in/patrickfham/ </Link></Text>
-            <Text><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon> - Twitter - <Link href="https://twitter.com/PatrickFHam" target="_blank">twitter.com/patrickfham/ </Link></Text>
-            <Text><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> - Facebook - <Link href="https://www.facebook.com/patrickfham/" target="_blank">facebook.com/patrickfham/ </Link></Text>
-            <Text><FontAwesomeIcon icon={faFolder}></FontAwesomeIcon> - Portfolio - <Link href="#Portfolio" target="_blank">linkedin.com/in/patrickfham/ </Link></Text>
+            <Text><FontAwesomeIcon icon={faLinkedin}></FontAwesomeIcon> - LinkedIn - <Link href="https://www.linkedin.com/in/patrickfham/" target="_blank">linkedin.com/in/PatrickFHam/ </Link></Text>
+            <Text><FontAwesomeIcon icon={faGithub}></FontAwesomeIcon> - GitHub - <Link href="https://github.com/PatrickFHam" target="_blank">github.com/PatrickFHam </Link></Text>
+            <Text><FontAwesomeIcon icon={faTwitter}></FontAwesomeIcon> - Twitter - <Link href="https://twitter.com/PatrickFHam" target="_blank">twitter.com/PatrickFHham/ </Link></Text>
+            <Text><FontAwesomeIcon icon={faFacebook}></FontAwesomeIcon> - Facebook - <Link href="https://www.facebook.com/patrickfham/" target="_blank">facebook.com/PatrickFHam/ </Link></Text>
+            <Text><FontAwesomeIcon icon={faFolder}></FontAwesomeIcon> - Portfolio - <Link href="#Portfolio" target="_blank"> LINK to live site goes here. </Link></Text>
           </Container>
 
         </Col>
