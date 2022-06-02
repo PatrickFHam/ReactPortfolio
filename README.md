@@ -46,7 +46,7 @@ Visit our site on Heroku or to install on your local machine, please following t
 
 
 ## Live URL
-https://patrickfham.github.io/ReactProfile
+https://patrickfham.github.io/ReactPortfolio
 
 ## Credits
 Patrick Ham
