@@ -22,7 +22,7 @@ const shownProjects = [
     id: 1,
     title: "Re-Engage",
     subtitle: "React.js / Javascript / NextUI / MongoDB / Apollo GraphQL",
-    githubLink: "https://github.com/PatrickFHam/ReactProfile",
+    githubLink: "https://github.com/PatrickFHam/Re-Engage",
     liveLink: "http://warm-gorge-10209.herokuapp.com",
     image: ReEngageImage,
     cardSize: 'card-big'
