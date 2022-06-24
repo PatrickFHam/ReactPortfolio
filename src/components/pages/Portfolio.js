@@ -12,13 +12,23 @@ import {
   CodeQuizImage,
   PasswordGeneratorImage,
   Bookshelf,
-  HeaderBannerImage
+  HeaderBannerImage,
+  ReEngageImage
 } from '../pages/images'
 
 
 const shownProjects = [
   {
     id: 1,
+    title: "Re-Engage",
+    subtitle: "React.js / Javascript / NextUI / MongoDB / Apollo GraphQL",
+    githubLink: "https://github.com/PatrickFHam/ReactProfile",
+    liveLink: "http://warm-gorge-10209.herokuapp.com",
+    image: ReEngageImage,
+    cardSize: 'card-big'
+  },
+  {
+    id: 2,
     title: "This Profile Site",
     subtitle: "React.js / Javascript / NextUI / HTML / CSS",
     githubLink: "https://github.com/PatrickFHam/ReactProfile",
@@ -27,7 +37,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 2,
+    id: 3,
     title: "The Shelf, by the Good Neighbors",
     subtitle: "Handlebars / Javascript / Bootstrap / HTML / CSS",
     githubLink: "https://github.com/PatrickFHam/Good-Neighbor",
@@ -36,7 +46,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 3,
+    id: 4,
     title: "SpeedRun Spectator",
     subtitle: "3rd-Party-APIs / Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/SpeedRunSpectator",
@@ -45,7 +55,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 4,
+    id: 5,
     title: "Weather Dashboard",
     subtitle: "3rd-Party-APIs / Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/WeatherDashboard",
@@ -54,7 +64,7 @@ const shownProjects = [
     cardSize: 'card-big'
   },
   {
-    id: 5,
+    id: 6,
     title: "Workday Planner",
     subtitle: "Javascript / Bootstrap",
     githubLink: "https://github.com/PatrickFHam/WorkdayScheduler",
@@ -63,7 +73,7 @@ const shownProjects = [
     cardSize: 'card-med'
   },
   {
-    id: 6,
+    id: 7,
     title: "Code Quiz",
     subtitle: "Javascript / CSS",
     githubLink: "https://github.com/PatrickFHam/CodeQuiz",
@@ -72,7 +82,7 @@ const shownProjects = [
     cardSize: 'card-med'
   },
   {
-    id: 7,
+    id: 8,
     title: "Password Generator",
     subtitle: "Javascript",
     githubLink: "https://github.com/PatrickFHam/PasswordGenerator",

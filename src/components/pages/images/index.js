@@ -5,6 +5,7 @@ import CodeQuizImage from '../images/matrix.jpg';
 import PasswordGeneratorImage from '../images/password.jpg';
 import HeaderBannerImage from '../images/legos2.jpg';
 import Bookshelf from '../images/bookshelf.jpg'
+import ReEngageImage from '../images/ladyreading2.jpg'
 
 export {
   SpeedRunImage,
@@ -14,4 +15,5 @@ export {
   PasswordGeneratorImage,
   HeaderBannerImage,
   Bookshelf,
+  ReEngageImage
 };
