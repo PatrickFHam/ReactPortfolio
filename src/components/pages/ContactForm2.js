@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
-import { Button, Container, Col, Text, Input, Textarea } from '@nextui-org/react';
+import { Button, Container, Col, Text, Input, Textarea, Modal } from '@nextui-org/react';
 import '../../styles/Contact.css';
 
 const ContactForm = () => {
+  
+  // MODAL TRIGGERS //
+  const [visible, setVisible] = React.useState(false);
+  const showModalHandler = () => setVisible(true);
+  const closeHandler = () => {
+    setVisible(false);
+    console.log("closed");
+  };
+  
   const [status, setStatus] = useState("Submit");
   const handleFormSubmit = async (e) => {
     e.preventDefault();
@@ -22,7 +31,9 @@ const ContactForm = () => {
     });
     setStatus("Submit");
     let result = await response.json();
-    alert(result.status);
+    // alert(result.status);
+    console.log(result.status);
+    showModalHandler();
   };
   return (
     <Container>
@@ -53,6 +64,31 @@ const ContactForm = () => {
           </Button>
         </form>
     </Col>
+
+    <Modal
+        closeButton
+        aria-labelledby="contact-form-successful"
+        open={visible}
+        onClose={closeHandler}
+      >
+        <Modal.Header>
+          <Text id="modal-title" size={18}>
+            Message Send 
+            <Text b size={18}>
+              Successful!
+            </Text>
+          </Text>
+        </Modal.Header>
+        <Modal.Body>
+          <Text h5>The form you filled out was successfully sent to Patrick.</Text>
+        </Modal.Body>
+        <Modal.Footer>
+          <Button auto flat color="error" onClick={closeHandler}>
+            Close
+          </Button>
+        </Modal.Footer>
+      </Modal>
+
   </Container>
 
   );
