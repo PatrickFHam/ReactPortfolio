@@ -1,22 +1,32 @@
 import React, { useState } from 'react';
+import axios from 'axios';
 import { Button, Container, Col, Text, Input, Textarea } from '@nextui-org/react';
 import '../../styles/Contact.css';
 
-export default function Form() {
+class Form extends React.Component {
 
-  // Here we set two state variables for firstName and lastName using `useState`
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-
-  const handleInputChange = (e) => {
-    // Getting the value and name of the input which triggered the change
-    const { name, value } = e.target;
-
-    // Ternary statement that will call either setFirstName or setLastName based on what field the user is typing in
-    return name === 'name' ? setName(value) : setEmail(value);
+  constructor (props) {
+    super(props);
+    this.state = {
+      name: '',
+      email: '',
+      body: ''
+    }
   };
 
-  const handleFormSubmit = (e) => {
+  onNameChange(e) {
+	  this.setState({name: e.target.value})
+  }
+
+  onEmailChange(e) {
+	  this.setState({email: e.target.value})
+  }
+
+  onMessageChange(e) {
+	  this.setState({message: e.target.value})
+  }
+
+  handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
     e.preventDefault();
 
@@ -26,11 +36,11 @@ export default function Form() {
     setEmail('');
   };
 
-  return (
+  render () {
     <Container>
       <Col>
         <Text h3>Send a Quick Message</Text>
-        <form className="form">
+        <form className="contact-form" onSubmit={this.handleFormSubmit.bind(this)} method="POST">
           <Input clearable underlined 
             value={name}
             name="name"
@@ -54,5 +64,7 @@ export default function Form() {
         </form>
         </Col>
     </Container>
-  );
+  };
 }
+
+export default Form;
