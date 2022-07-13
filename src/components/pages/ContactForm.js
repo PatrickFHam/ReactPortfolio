@@ -10,7 +10,7 @@ class Form extends React.Component {
     this.state = {
       name: '',
       email: '',
-      body: ''
+      message: ''
     }
   };
 
