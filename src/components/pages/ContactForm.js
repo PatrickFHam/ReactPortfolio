@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import axios from 'axios';
 import { Button, Container, Col, Text, Input, Textarea } from '@nextui-org/react';
 import '../../styles/Contact.css';
@@ -14,17 +14,27 @@ class Form extends React.Component {
     }
   };
 
-  onNameChange(e) {
-	  this.setState({name: e.target.value})
+  handleSubmit(e){
+    e.preventDefault();
+    axios({
+      method: "POST",
+      url:"http://localhost:3002/send",
+      data:  this.state
+    }).then((response)=>{
+      if (response.data.status === 'success') {
+        alert("Message Sent.");
+        this.resetForm()
+      } else if (response.data.status === 'fail') {
+        alert("Message failed to send.")
+      }
+    })
   }
 
-  onEmailChange(e) {
-	  this.setState({email: e.target.value})
-  }
+  resetForm(){
+    this.setState({name: '', email: '', message: ''})
+  };
 
-  onMessageChange(e) {
-	  this.setState({message: e.target.value})
-  }
+  
 
   handleFormSubmit = (e) => {
     // Preventing the default behavior of the form submit (which is to refresh the page)
@@ -64,6 +74,18 @@ class Form extends React.Component {
         </form>
         </Col>
     </Container>
+  };
+
+  onNameChange(e) {
+	  this.setState({name: e.target.value})
+  }
+
+  onEmailChange(e) {
+	  this.setState({email: e.target.value})
+  };
+
+  onMessageChange(e) {
+	  this.setState({message: e.target.value})
   };
 }
 
