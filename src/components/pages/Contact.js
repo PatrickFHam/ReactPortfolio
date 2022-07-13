@@ -3,7 +3,7 @@ import { Button, Container, Col, Text, Row } from '@nextui-org/react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope, faList, faFolder } from '@fortawesome/free-solid-svg-icons';
 import { faGithub, faFacebook, faLinkedin, faTwitter } from '@fortawesome/free-brands-svg-icons';
-import Form from './ContactForm';
+import Form from './ContactForm2';
 import '../../styles/Contact.css';
 
 export default function Contact(props) {
